@@ -8,7 +8,7 @@ displayName="MoarEnergistics"
 credits=""
 authors="OneLousyDev"
 description='''
-A mod which contains some useful extras for AplliedEnergistics in modern Minecraft versions!
+A mod which contains some useful extras for AppliedEnergistics in modern Minecraft versions!
 '''
 [[dependencies.moarenergistics]]
     modId="forge"
@@ -20,5 +20,11 @@ A mod which contains some useful extras for AplliedEnergistics in modern Minecra
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.moarenergistics]]
+    modId="appliedenergistics2"
+    mandatory=true
+    versionRange="[8.4.0,8.4.3)"
     ordering="NONE"
     side="BOTH"

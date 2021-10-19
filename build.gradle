@@ -64,8 +64,20 @@ minecraft {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+repositories {
+    maven {
+        name "Modmaven"
+        url "https://modmaven.dev/"
+        content {
+            includeGroup 'appeng'
+        }
+    }
+}
+
 dependencies {
     minecraft "net.minecraftforge:forge:${forge_version}"
+    compileOnly "appeng:appliedenergistics2:8.4.0:api"
+    runtimeOnly "appeng:appliedenergistics2:8.4.0"
 }
 
 jar {
